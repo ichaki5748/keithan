@@ -4,12 +4,12 @@ import com.ichaki5748.keithan.Application
 import com.ichaki5748.keithan.JvmArgs
 import com.ichaki5748.keithan.NexusArtifactIdentity
 
-private val dbtsGroupId = "com.ichaki5748"
+private val artifactGroupId = "com.ichaki5748"
 
 
-val dataProducer: Application = Application("data-producer", NexusArtifactIdentity("data-producer", dbtsGroupId))
+val dataProducer: Application = Application("data-producer", NexusArtifactIdentity("data-producer", artifactGroupId))
 
-val dqmProducer: Application = Application("dqm-producer", NexusArtifactIdentity("dqm-producer", dbtsGroupId))
+val dqmProducer: Application = Application("dqm-producer", NexusArtifactIdentity("dqm-producer", artifactGroupId))
 
 // etc
 
