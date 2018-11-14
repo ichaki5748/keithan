@@ -6,16 +6,16 @@ import javax.script.ScriptEngine
 
 object ConfigMain {
 
-    @JvmStatic
-    fun main(args: Array<String>) {
+  @JvmStatic
+  fun main(args: Array<String>) {
 
-        val scriptEngine: ScriptEngine = KotlinJsr223JvmLocalScriptEngineFactory().scriptEngine
+    val scriptEngine: ScriptEngine = KotlinJsr223JvmLocalScriptEngineFactory().scriptEngine
 
-        val script = javaClass.getResource("/dev.kts").readText(Charsets.UTF_8)
+    val script = javaClass.getResource("/dev.kts").readText(Charsets.UTF_8)
 
-        val env: Environment = scriptEngine.eval(script) as Environment
+    val env: Environment = scriptEngine.eval(script) as Environment
 
-        println(env)
-    }
+    println(env)
+  }
 
 }
